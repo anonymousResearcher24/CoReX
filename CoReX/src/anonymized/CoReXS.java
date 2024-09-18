@@ -1938,7 +1938,7 @@ public class CoReXS {
 	    if (FirstTime) {		    	
 	        String[] header = {"Bug ID", 
 	        		"Old Trace" , "Old Sync Slice", "Old Sync Reduc.", "Old CoReX", "Old CoReX Reduc.", 
-	        		"New Trace" , "New Sync Slice", "New Sync Reduc.", "New CoReX", "New CoReX Reduc."
+	        		"New Trace" , "New Sync Slice", "New Sync Reduc.", "New CoReX", "New CoReX Reduc.", "Sync Time", "Summary Time"
 	        		};
 	        WriteToExcel(results, header, "Reduction Rate",true,true);
 	    }
@@ -1949,7 +1949,8 @@ public class CoReXS {
 //	    		};
 	    String[] detailedDataRQ2 = {bugID, 
 	    		String.valueOf(oldTrace.getExecutionList().size()), String.valueOf(old_sync_slice.size()),String.valueOf(SyncOldReduction),String.valueOf(old_kept_without_reaching_and_keeping_sameDepMatched.size()), String.valueOf(CoReXOldReduction),
-	    		String.valueOf(newTrace.getExecutionList().size()), String.valueOf(new_sync_slice.size()),String.valueOf(SyncNewReduction),  String.valueOf(new_kept_without_reaching_and_keeping_sameDepMatched.size()), String.valueOf(CoReXNewReduction)
+	    		String.valueOf(newTrace.getExecutionList().size()), String.valueOf(new_sync_slice.size()),String.valueOf(SyncNewReduction),  String.valueOf(new_kept_without_reaching_and_keeping_sameDepMatched.size()), String.valueOf(CoReXNewReduction),
+	    		String.valueOf(dual_time), String.valueOf(corex_time)
 	    		};
 	    WriteToExcel(results,detailedDataRQ2,"Reduction Rate",true, false);
 	    /////////////////#######////#######////#######////#######////#######////#######
