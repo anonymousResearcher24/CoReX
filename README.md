@@ -51,7 +51,7 @@ Note that CoReX, Microbat, and TRegression projects are Eclipse plugin project.
 ---
 --- 
 
-## Running the Tool Manually Through the Plugin 
+## Running the Tool Through the Plugin 
 ### General guideline: Running with Main() method in Run
 Now, you can run CoReX through the main method in the run class (run as "Java Application").
 
@@ -77,6 +77,17 @@ The structure of the folder is as follows:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|__ 2 <br /> 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|__ ...<br />
 
+Here is an example of running bug_id 6 of InPreSS subjects:
+
+![](/img/args.png)
+
+Where, the base folder storing the InPreSS subjects is ".../bug_repos/". 
+"InPreSS" is the name of the benchmark to run. 
+Bug_id is 6 and the failing test is "com.intuit.wasabi.export.rest.impl.DefaultRestEndPointTest::testGetRestEndPointURI".
+
+The failing test (test_class::test_method) is stored in the "failing_tests" file in the buggy version of each subject. 
+
+
 ---
 
 ### Running on Defects4J
@@ -93,4 +104,4 @@ The structure of Defects4J is as follows:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|__ 2 (bug_id)<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|__ ...<br />
 
-You can run each bugs similar to running our subjects. 
+You can run each bugs similar to running LibRench subjects. 
