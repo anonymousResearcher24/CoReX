@@ -37,7 +37,7 @@ Note that CoReX, Microbat, and TRegression projects are Eclipse plugin project.
 
 2. You need to import the following projects through "Existing Projects into Workspace":
 
-<img align="right" src="img/structure.png" alt="drawing" width="350"/>
+<img align="right" src="img/structures.png" alt="drawing" width="350"/>
 
 - CoReX
 - mirobat/experiment.utils
